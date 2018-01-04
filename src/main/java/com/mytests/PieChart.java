@@ -24,7 +24,7 @@ class MyPieChart extends JPanel {
     public void paintComponent(Graphics comp) {
         int r = 300;
         Graphics2D comp2D = (Graphics2D) comp;
-        comp2D.setColor(Color.green);
+        comp2D.setColor(Color.MAGENTA);
         comp2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
         Rectangle2D.Float backgroud = new Rectangle2D.Float(0F, 0F, getSize().width, getSize().height);
         comp2D.fill(backgroud);
