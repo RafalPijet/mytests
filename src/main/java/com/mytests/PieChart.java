@@ -7,7 +7,7 @@ import javax.swing.*;
 
 public class PieChart extends JFrame {
     public PieChart() {
-        super("Wykres kołowy");
+        super("Mój wykres kołowy");
         setSize(500, 500);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         MyPieChart chart = new MyPieChart();
@@ -46,5 +46,6 @@ class MyPieChart extends JPanel {
         comp2D.setColor(Color.gray);
         Arc2D.Float arc5 = new Arc2D.Float((getSize().width / 2) - (r / 2), (getSize().height / 2) - (r / 2), r, r, 270, 90, Arc2D.PIE);
         comp2D.fill(arc5);
+        System.out.println();
     }
 }
