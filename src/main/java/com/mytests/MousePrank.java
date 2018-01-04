@@ -3,15 +3,15 @@ package com.mytests;
 import java.awt.*;
 import java.awt.event.*;
 import javax.swing.*;
-
+//Zabawa z mysza
 public class MousePrank extends JFrame implements ActionListener {
     public MousePrank() {
-        super("Komunikat");
+        super("Komunikat:");
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         setSize(420, 220);
         BorderLayout border = new BorderLayout();
         setLayout(border);
-        JLabel msg = new JLabel("Kliknij OK, aby zamknąć program.");
+        JLabel msg = new JLabel("Kliknij OK, aby zamknąć program...");
         add(BorderLayout.NORTH, msg);
         PrankPanel prank = new PrankPanel();
         prank.ok.addActionListener(this);
@@ -23,10 +23,6 @@ public class MousePrank extends JFrame implements ActionListener {
         System.exit(0);
     }
 
-    /*public Insets getInsets() {
-        return new Insets(40, 10, 10, 10);
-    }
-*/
     private static void setLookAndFeel() {
         try {
             UIManager.setLookAndFeel(
@@ -34,7 +30,7 @@ public class MousePrank extends JFrame implements ActionListener {
             );
         } catch (Exception exc) {
             System.err.println("Nie potrafię wczytać "
-                    + "systemowego wyglądu: " + exc);
+                    + "systemowego wyglądu I CO?: " + exc);
         }
     }
 

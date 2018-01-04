@@ -11,7 +11,7 @@ class RangeLister {
     public static void main(String[] arguments) {
         int[] range;
         RangeLister lister = new RangeLister();
-        range = lister.makeRange(7, 53);
+        range = lister.makeRange(3, 73);
         System.out.print("[");
         for (int i = 0; i < range.length; i++)
             System.out.print(range[i] + " ");
