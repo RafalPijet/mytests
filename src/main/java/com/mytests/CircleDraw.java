@@ -22,7 +22,7 @@ public class CircleDraw extends JFrame {
 
 class MyCircle extends JPanel {
     public void paintComponent(Graphics comp) {
-        int r = 300;
+        int r = 200;
         Graphics2D comp2D = (Graphics2D) comp;
         comp2D.setColor(Color.red);
         comp2D.setRenderingHint(RenderingHints.KEY_ANTIALIASING, RenderingHints.VALUE_ANTIALIAS_ON);
