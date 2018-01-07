@@ -26,7 +26,7 @@ class Aliens3_1 extends Alien3 {
     }
 }
 
-class Aliens3_2 extends Alien3 {
+class Aliens3_2 extends Aliens3_1 {
     Aliens3_2() {
         System.out.println("Jestem konstruktorem Alien3_2");
     }
