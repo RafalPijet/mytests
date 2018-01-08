@@ -26,6 +26,9 @@ class Alien3 {
         System.out.println("getter z klasy Alien3 zwraca referencje al2 do obiektu klasy Alien2");
         return al2;
     }
+    void show() {
+        System.out.println("jestem wywołaniem metody show() klasy Alien3");
+    }
 }
 
 class Alien3_1 extends Alien3 {
@@ -44,6 +47,9 @@ class Alien3_1 extends Alien3 {
         System.out.println("getter z klasy Alien3_1 zwraca referencje al1 do obiektu klasy Alien2");
         return al2;
     }
+    void show(String text) {
+        System.out.println("jestem wywołaniem metody show() klasy Alien3_1 --> " + text);
+    }
 }
 
 class Alien3_2 extends Alien3_1 {
@@ -60,6 +66,10 @@ class Aliens_Apli {
         Alien3 alien = new Alien3_2();
         alien.getAl1();
         alien.getAl2();
+        alien.show();
+        Alien3_1 alien1 = new Alien3_1();
+        alien1.show("jestem przeciążoną metodą!!!");
+        alien1.show();
 
     }
         }
