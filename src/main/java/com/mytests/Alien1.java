@@ -57,6 +57,7 @@ class Alien3_2 extends Alien3_1 {
     Alien2 al2 = new Alien2();
     Alien3_2() {
         System.out.println("Jestem konstruktorem Alien3_2");
+        super.show("wywowałanie metody show klasy nadrzędnej dzięki słowu kluczowemu super");
     }
 
 }
