@@ -13,21 +13,43 @@ class Alien2 {
 }
 
 class Alien3 {
+    private Alien1 al1 = new Alien1();
+    private Alien2 al2 = new Alien2();
     Alien3() {
         System.out.println("Jestem konstruktorem Alien3");
     }
-}
-
-class Aliens3_1 extends Alien3 {
-    Alien1 al1 = new Alien1();
-    Alien2 al2 = new Alien2();
-    Aliens3_1() {
-        System.out.println("Jestem konstruktorem Alien3_1");
+    Alien1 getAl1() {
+        System.out.println("getter z klasy Alien3 zwraca referencje al1 do obiektu klasy Alien1");
+        return al1;
+    }
+    Alien2 getAl2() {
+        System.out.println("getter z klasy Alien3 zwraca referencje al2 do obiektu klasy Alien2");
+        return al2;
     }
 }
 
-class Aliens3_2 extends Aliens3_1 {
-    Aliens3_2() {
+class Alien3_1 extends Alien3 {
+    private Alien1 al1 = new Alien1();
+    private Alien2 al2 = new Alien2();
+    Alien3_1() {
+        System.out.println("Jestem konstruktorem Alien3_1");
+    }
+    @Override
+    Alien1 getAl1() {
+        System.out.println("getter z klasy Alien3_1 zwraca referencje al1 do obiektu klasy Alien1");
+        return al1;
+    }
+    @Override
+    Alien2 getAl2() {
+        System.out.println("getter z klasy Alien3_1 zwraca referencje al1 do obiektu klasy Alien2");
+        return al2;
+    }
+}
+
+class Alien3_2 extends Alien3_1 {
+    Alien1 al1 = new Alien1();
+    Alien2 al2 = new Alien2();
+    Alien3_2() {
         System.out.println("Jestem konstruktorem Alien3_2");
     }
 
@@ -35,6 +57,9 @@ class Aliens3_2 extends Aliens3_1 {
 
 class Aliens_Apli {
     public static void main(String[] args) {
-        new Aliens3_2();
+        Alien3 alien = new Alien3_2();
+        alien.getAl1();
+        alien.getAl2();
+
     }
         }
