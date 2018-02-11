@@ -15,6 +15,7 @@ public class PrimeReader {
             } catch (EOFException e) {
                 buff.close();
                 System.out.println();
+                System.out.println("No to na tyle!!!");
             }
         } catch (IOException exc) {
             System.out.println("Błąd -- " + exc.toString());
