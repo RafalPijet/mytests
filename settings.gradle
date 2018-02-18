@@ -1,4 +1,5 @@
 include 'com.matests.stream'
 include 'mytests-exception'
 include 'mytests-good-patterns'
+include 'kodilla-spring-intro'
 
